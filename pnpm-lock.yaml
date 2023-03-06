@@ -1,30 +1,46 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@antfu/ni': ^0.20.0
-  '@ocavue/eslint-config': ^0.4.7
-  '@types/node': ^18.14.6
-  eslint: ^8.35.0
-  esno: ^0.16.3
-  prettier: ^2.8.4
-  tsup: ^6.6.3
-  typedoc: ^0.23.0
-  typescript: ^4.9.5
-  vite: ^4.1.4
-  vitest: ^0.29.2
+importers:
 
-devDependencies:
-  '@antfu/ni': 0.20.0
-  '@ocavue/eslint-config': 0.4.7_64jebu3ilvs7epq3v3pc7ikc4m
-  '@types/node': 18.14.6
-  eslint: 8.35.0
-  esno: 0.16.3
-  prettier: 2.8.4
-  tsup: 6.6.3_typescript@4.9.5
-  typedoc: 0.23.26_typescript@4.9.5
-  typescript: 4.9.5
-  vite: 4.1.4_@types+node@18.14.6
-  vitest: 0.29.2
+  .:
+    specifiers:
+      '@antfu/ni': ^0.20.0
+      '@ocavue/eslint-config': ^0.4.7
+      '@types/node': ^18.14.6
+      eslint: ^8.35.0
+      esno: ^0.16.3
+      prettier: ^2.8.4
+      tsup: ^6.6.3
+      typedoc: ^0.23.0
+      typescript: ^4.9.5
+      vite: ^4.1.4
+      vitest: ^0.29.2
+    devDependencies:
+      '@antfu/ni': 0.20.0
+      '@ocavue/eslint-config': 0.4.7_64jebu3ilvs7epq3v3pc7ikc4m
+      '@types/node': 18.14.6
+      eslint: 8.35.0
+      esno: 0.16.3
+      prettier: 2.8.4
+      tsup: 6.6.3_typescript@4.9.5
+      typedoc: 0.23.26_typescript@4.9.5
+      typescript: 4.9.5
+      vite: 4.1.4_@types+node@18.14.6
+      vitest: 0.29.2
+
+  example:
+    specifiers:
+      prosemirror-model: ^1.19.0
+      typedoc: ^0.23.0
+      typedoc-plugin-external-package-links: '*'
+      typedoc-plugin-markdown: ^3.14.0
+      typescript: ^4.9.5
+    devDependencies:
+      prosemirror-model: 1.19.0
+      typedoc: 0.23.26_typescript@4.9.5
+      typedoc-plugin-external-package-links: link:..
+      typedoc-plugin-markdown: 3.14.0_typedoc@0.23.26
+      typescript: 4.9.5
 
 packages:
 
@@ -2080,6 +2096,19 @@ packages:
     resolution: {integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==}
     dev: true
 
+  /handlebars/4.7.7:
+    resolution: {integrity: sha512-aAcXm5OAfE/8IXkcZvCepKU3VzW1/39Fb5ZuqMtgI/hT8X2YgoMvBY5dLhq/cpOvw7Lk1nK/UF71aLG/ZnVYRA==}
+    engines: {node: '>=0.4.7'}
+    hasBin: true
+    dependencies:
+      minimist: 1.2.6
+      neo-async: 2.6.2
+      source-map: 0.6.1
+      wordwrap: 1.0.0
+    optionalDependencies:
+      uglify-js: 3.17.4
+    dev: true
+
   /has-bigints/1.0.2:
     resolution: {integrity: sha512-tSvCKtBr9lkF0Ex0aQiP9N+OpV4zi2r/Nee5VkRDbaqv35RLYMzbwQfFSZZH0kR+Rd6302UJZ2p/bJCEoR3VoQ==}
     dev: true
@@ -2595,6 +2624,10 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
+  /neo-async/2.6.2:
+    resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
+    dev: true
+
   /normalize-package-data/2.5.0:
     resolution: {integrity: sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA==}
     dependencies:
@@ -2681,6 +2714,10 @@ packages:
       prelude-ls: 1.2.1
       type-check: 0.4.0
       word-wrap: 1.2.3
+    dev: true
+
+  /orderedmap/2.1.0:
+    resolution: {integrity: sha512-/pIFexOm6S70EPdznemIz3BQZoJ4VTFrhqzu0ACBqBgeLsLxq8e6Jim63ImIfwW/zAD1AlXpRMlOv3aghmo4dA==}
     dev: true
 
   /p-limit/1.3.0:
@@ -2884,6 +2921,12 @@ packages:
       ansi-regex: 5.0.1
       ansi-styles: 5.2.0
       react-is: 17.0.2
+    dev: true
+
+  /prosemirror-model/1.19.0:
+    resolution: {integrity: sha512-/CvFGJnwc41EJSfDkQLly1cAJJJmBpZwwUJtwZPTjY2RqZJfM8HVbCreOY/jti8wTRbVyjagcylyGoeJH/g/3w==}
+    dependencies:
+      orderedmap: 2.1.0
     dev: true
 
   /punycode/2.1.1:
@@ -3397,6 +3440,15 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /typedoc-plugin-markdown/3.14.0_typedoc@0.23.26:
+    resolution: {integrity: sha512-UyQLkLRkfTFhLdhSf3RRpA3nNInGn+k6sll2vRXjflaMNwQAAiB61SYbisNZTg16t4K1dt1bPQMMGLrxS0GZ0Q==}
+    peerDependencies:
+      typedoc: '>=0.23.0'
+    dependencies:
+      handlebars: 4.7.7
+      typedoc: 0.23.26_typescript@4.9.5
+    dev: true
+
   /typedoc/0.23.26_typescript@4.9.5:
     resolution: {integrity: sha512-5m4KwR5tOLnk0OtMaRn9IdbeRM32uPemN9kur7YK9wFqx8U0CYrvO9aVq6ysdZSV1c824BTm+BuQl2Ze/k1HtA==}
     engines: {node: '>= 14.14'}
@@ -3420,6 +3472,14 @@ packages:
   /ufo/1.1.0:
     resolution: {integrity: sha512-LQc2s/ZDMaCN3QLpa+uzHUOQ7SdV0qgv3VBXOolQGXTaaZpIur6PwUclF5nN2hNkiTRcUugXd1zFOW3FLJ135Q==}
     dev: true
+
+  /uglify-js/3.17.4:
+    resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
+    engines: {node: '>=0.8.0'}
+    hasBin: true
+    requiresBuild: true
+    dev: true
+    optional: true
 
   /unbox-primitive/1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
@@ -3609,6 +3669,10 @@ packages:
   /word-wrap/1.2.3:
     resolution: {integrity: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /wordwrap/1.0.0:
+    resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
     dev: true
 
   /wrappy/1.0.2:

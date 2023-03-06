@@ -1,0 +1,18 @@
+{
+    // https://typedoc.org/guides/options/
+    "$schema": "https://typedoc.org/schema.json",
+    "entryPoints": ["index.ts"],
+    "plugin": [
+        "typedoc-plugin-markdown",
+        // "typedoc-plugin-external-package-links",
+    ],
+    "out": "docs",
+    "disableSources": true,
+    "githubPages": false, 
+    "readme": "none",
+
+    // https://www.npmjs.com/package/typedoc-plugin-markdown
+    "hideBreadcrumbs": true,
+    "hideInPageTOC": true,
+    "hideMembersSymbol": true, 
+}
