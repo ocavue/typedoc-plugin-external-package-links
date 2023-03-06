@@ -1,7 +1,13 @@
-import { describe, expect, it } from 'vitest'
+import { execa } from 'execa'
+import fs from 'node:fs/promises'
+import { describe, expect, test } from 'vitest'
 
-describe('should', () => {
-  it('exported', () => {
-    expect(1).toEqual(1)
+describe('Output links', async () => {
+  await execa('pnpm run example', { shell: true })
+
+  const output = await fs.readFile('example/output/README.md', 'utf-8')
+
+  test('ProseMirror', () => {
+    expect(output).toContain('https://prosemirror.net/docs/ref/#model.Attrs')
   })
 })

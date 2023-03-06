@@ -2,6 +2,9 @@
     "name": "example",
     "version": "0.0.0",
     "private": true,
+    "scripts": {
+        "build": "typedoc"
+    },
     "devDependencies": {
         "prosemirror-model": "^1.19.0",
         "typedoc": "^0.23.0",

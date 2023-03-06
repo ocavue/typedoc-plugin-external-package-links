@@ -4,9 +4,9 @@
     "entryPoints": ["index.ts"],
     "plugin": [
         "typedoc-plugin-markdown",
-        // "typedoc-plugin-external-package-links",
+        "..",
     ],
-    "out": "docs",
+    "out": "output",
     "disableSources": true,
     "githubPages": false, 
     "readme": "none",
