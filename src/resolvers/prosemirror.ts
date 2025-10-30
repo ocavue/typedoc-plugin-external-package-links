@@ -29,17 +29,12 @@ const prosemirrorResolver: ExternalSymbolResolver = (declaration) => {
     return
   }
 
-
   const typeName = referencePath.replace(/^\./, '')
 
-
   // Internal types
-  if (typeName === "DecorationGroup" ) {
+  if (typeName === 'DecorationGroup') {
     return undefined
   }
-
-
-
 
   // Following the logic from the ProseMirror website
   // https://github.com/ProseMirror/website/blob/6d86b17bc5b32e123955dcb2e24139578aa9c87b/src/build/ref.js#L35-L39
