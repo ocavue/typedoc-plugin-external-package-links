@@ -2,7 +2,7 @@
   "name": "typedoc-plugin-external-package-links",
   "type": "module",
   "version": "0.1.0",
-  "packageManager": "pnpm@7.29.0",
+  "packageManager": "pnpm@10.20.0",
   "description": "A TypeDoc plugin to add link mappings to external packages",
   "author": "ocavue <ocavue@gmail.com>",
   "license": "MIT",
@@ -13,7 +13,9 @@
     "url": "https://github.com/ocavue/typedoc-plugin-external-package-links.git"
   },
   "bugs": "https://github.com/ocavue/typedoc-plugin-external-package-links/issues",
-  "keywords": [],
+  "keywords": [
+    "typedoc"
+  ],
   "sideEffects": false,
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -34,33 +36,29 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
     "lint": "eslint .",
     "example": "pnpm build && pnpm --filter example build",
-    "prepublishOnly": "nr build",
+    "fix": "eslint --fix . && prettier --write .",
     "test": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc -b"
   },
   "devDependencies": {
-    "@antfu/ni": "^0.20.0",
-    "@ocavue/eslint-config": "^0.4.7",
-    "@types/node": "^18.14.6",
-    "eslint": "^8.35.0",
+    "@ocavue/eslint-config": "^3.6.1",
+    "@ocavue/tsconfig": "^0.5.0",
+    "@types/node": "^22.18.13",
+    "eslint": "^9.38.0",
     "execa": "^7.0.0",
-    "prettier": "^2.8.4",
-    "tsup": "^6.6.3",
-    "typedoc": "^0.23.0",
-    "typescript": "^4.9.5",
-    "vite": "^4.1.4",
-    "vitest": "^0.29.2"
-  },
-  "renovate": {
-    "extends": [
-      "github>ocavue/config-renovate"
-    ]
+    "prettier": "^3.6.2",
+    "tsdown": "^0.15.12",
+    "typedoc": "^0.28.14",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.12",
+    "vitest": "^4.0.5"
   }
 }

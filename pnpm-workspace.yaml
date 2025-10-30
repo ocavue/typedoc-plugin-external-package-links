@@ -1,2 +1,3 @@
+ignoreWorkspaceRootCheck: true
 packages:
-  - "example"
+  - 'example'
