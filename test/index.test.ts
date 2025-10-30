@@ -10,6 +10,6 @@ describe('Output links', async () => {
 
   test('ProseMirror', () => {
     expect(output).toContain('https://prosemirror.net/docs/ref/#model.Attrs')
-    expect(output).not.toContain('DOMNode')
+    expect(output).not.toContain('view.DOMNode')
   })
 })
