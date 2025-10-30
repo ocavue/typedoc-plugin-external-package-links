@@ -53,7 +53,7 @@
     "@ocavue/tsconfig": "^0.5.0",
     "@types/node": "^22.18.13",
     "eslint": "^9.38.0",
-    "execa": "^7.0.0",
+    "execa": "^9.0.0",
     "prettier": "^3.6.2",
     "tsdown": "^0.15.12",
     "typedoc": "^0.28.14",
