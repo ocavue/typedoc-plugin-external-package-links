@@ -21,7 +21,7 @@ const prosemirrorResolver: ExternalSymbolResolver = (declaration) => {
 
   const referencePath = declaration.symbolReference?.path?.reduce(
     (str, path) => str + path.navigation + path.path,
-    ''
+    '',
   )
   if (!referencePath) return
 

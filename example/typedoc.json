@@ -1,18 +1,14 @@
 {
-    // https://typedoc.org/guides/options/
-    "$schema": "https://typedoc.org/schema.json",
-    "entryPoints": ["index.ts"],
-    "plugin": [
-        "typedoc-plugin-markdown",
-        "..",
-    ],
-    "out": "output",
-    "disableSources": true,
-    "githubPages": false, 
-    "readme": "none",
+  // https://typedoc.org/guides/options/
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["index.ts"],
+  "plugin": ["typedoc-plugin-markdown", "../dist/index.js"],
+  "out": "output",
+  "disableSources": true,
+  "githubPages": false,
+  "readme": "none",
 
-    // https://www.npmjs.com/package/typedoc-plugin-markdown
-    "hideBreadcrumbs": true,
-    "hideInPageTOC": true,
-    "hideMembersSymbol": true, 
+  // https://www.npmjs.com/package/typedoc-plugin-markdown
+  "hideBreadcrumbs": true,
+  "router": "module"
 }

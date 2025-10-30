@@ -1,5 +1,6 @@
-import { execa } from 'execa'
 import fs from 'node:fs/promises'
+
+import { execa } from 'execa'
 import { describe, expect, test } from 'vitest'
 
 describe('Output links', async () => {
