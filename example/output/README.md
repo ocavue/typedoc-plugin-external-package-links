@@ -8,7 +8,7 @@
 
 ### ViewMutationRecord
 
-> **ViewMutationRecord** = `MutationRecord` \| \{ `target`: [`DOMNode`](https://prosemirror.net/docs/ref/#view.DOMNode); `type`: `"selection"`; \}
+> **ViewMutationRecord** = `MutationRecord` \| \{ `target`: [`DOMNode`](https://developer.mozilla.org/en-US/docs/Web/API/Node); `type`: `"selection"`; \}
 
 A ViewMutationRecord represents a DOM
 [mutation](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
