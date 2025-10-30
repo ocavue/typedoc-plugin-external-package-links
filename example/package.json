@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "prosemirror-model": "^1.25.4",
+    "prosemirror-view": "^1.41.3",
     "typedoc": "^0.28.14",
     "typedoc-plugin-external-package-links": "*",
     "typedoc-plugin-markdown": "^4.9.0",

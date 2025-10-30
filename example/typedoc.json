@@ -1,7 +1,7 @@
 {
   // https://typedoc.org/guides/options/
   "$schema": "https://typedoc.org/schema.json",
-  "entryPoints": ["index.ts"],
+  "entryPoints": ["src/index.ts"],
   "plugin": ["typedoc-plugin-markdown", "../dist/index.js"],
   "out": "output",
   "disableSources": true,
